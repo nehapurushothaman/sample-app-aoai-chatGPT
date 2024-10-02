@@ -870,6 +870,7 @@ const Chat = () => {
                 {appStateContext?.state.isCosmosDBAvailable?.status !== CosmosDBStatus.NotConfigured && (
                   <CommandBarButton
                     role="button"
+                    title="New chat"
                     styles={{
                       icon: {
                         color: '#FFFFFF'
@@ -895,6 +896,7 @@ const Chat = () => {
                 )}
                 <CommandBarButton
                   role="button"
+                  title="Clear chat"
                   styles={{
                     icon: {
                       color: '#FFFFFF'

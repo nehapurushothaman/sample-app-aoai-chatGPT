@@ -100,6 +100,7 @@ export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend, conv
               className={styles.fileIcon}
               iconName={'PhotoCollection'}
               aria-label='Upload Image'
+              title="Upload image"
             />
           </label>
         </div>)}
@@ -110,7 +111,9 @@ export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend, conv
         tabIndex={0}
         aria-label="Ask question button"
         onClick={sendQuestion}
-        onKeyDown={e => (e.key === 'Enter' || e.key === ' ' ? sendQuestion() : null)}>
+        onKeyDown={e => (e.key === 'Enter' || e.key === ' ' ? sendQuestion() : null)}
+        title="Send your question"
+       >
         {sendQuestionDisabled ? (
           <SendRegular className={styles.questionInputSendButtonDisabled} />
         ) : (
